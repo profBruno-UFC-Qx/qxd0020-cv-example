@@ -1,0 +1,140 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F7F8FA;
+    color: rgb(88, 103, 124);
+}
+
+.conteiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.176) 0px 16px 48px 0px;
+}
+
+
+header {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    background-color: #434E5E;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+#personal-info {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#sites {
+    padding: 20px;
+}
+
+#sites img {
+    background-color: white;
+    padding: 5px;
+    border-radius: 2px;
+    width: 14px;
+}
+
+#sites a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+ul.no_bullet {
+    list-style-type: none;
+}
+
+ul.contact {
+    padding: 0px;
+    color: rgba(255, 255, 255,  0.6);
+}
+
+#sites a:hover {
+    color: white;
+}
+
+li {
+    margin: 10px 0;
+}
+
+
+#summary {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 0 20px 0 20px;
+}
+
+main {
+    grid-column: 1 / span 2;
+    margin: 0 10px 0 20px;
+}
+
+aside {
+    grid-column: 3 / span 1;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2, h4, h5, h6 {
+    color: #434E5E;
+    margin: 5px 0;
+}
+
+h2 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+    margin: 40px 0 20px 0;
+}
+
+
+aside > h4, h5 {
+    font-weight: normal;
+}
+
+.company {
+    float: right;
+    font-size: 0.8em;
+}
+
+.period {
+    color: rgb(170, 180, 195);
+    font-weight: normal;
+}
+
+.tech {
+    margin-bottom: 40px;
+}
+
+.tech li {
+    display: inline-block;
+    background-color: rgb(88, 103, 124);
+    color: white;
+    border-radius: 0.25em;
+    font-size: 0.75em;
+    padding: 0.35em 0.65em;
+}
+
+ul.awards {
+    font-size: 0.9em;
+    list-style-image: url("img/icon/trophy.png");
+}
+
+.awards > li:first-line {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.lang {
+    padding-left: 10px;
+}
+
+.lang em {
+    font-weight: lighter;
+    font-style: normal;
+    color: #6c757d;
+}
